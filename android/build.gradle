@@ -25,8 +25,8 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
+    namespace "com.circuskitchens.flutter_datawedge"
     if (getGradle().getGradleVersion().substring(0, 1).toInteger() >= 8) {
-        namespace "com.circuskitchens.flutter_datawedge"
 
         compileOptions {
             sourceCompatibility JavaVersion.VERSION_17
